@@ -33,6 +33,7 @@
     "MinecraftDedicatedServerMixin",
     "MinecraftServerMixin",
     "PhantomSpawnerMixin",
+    "PillagerSpawnerMixin",
     "PistonBehaviorMixin",
     "PistonBlockEntityMixin",
     "PistonBlockMixin",

@@ -198,6 +198,15 @@ public class Settings {
     @Rule(category = {FEATURE, EXPERIMENTAL})
     public static BreakBlockDispenserBehavior.Option dispensersBreakBlocks = BreakBlockDispenserBehavior.Option.FALSE;
 
+    @Rule(category = EXPERIMENTAL, validator = PatrolMultiplier.class)
+    public static double patrolMultiplier = 1;
+
+    public static class PatrolMultiplier extends Validator.Range<Double> {
+        public PatrolMultiplier() {
+            super(1.0, 1200.0);
+        }
+    }
+
     public static void main(String[] args) throws IOException {
         Bootstrap.initialize();
         Translations.init();

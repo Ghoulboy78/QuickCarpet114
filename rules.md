@@ -241,6 +241,15 @@ Options: `true`, `false`
 Categories: optimizations, experimental  
 Fixes: [MC-151802](https://bugs.mojang.com/browse/MC-151802) fixed in 1.14.3-pre1 (partial)  
 
+## patrolMultiplier
+carpet.rule.patrolMultiplier.description
+
+Type: `double`  
+Default: `1.0`  
+Options:   
+Categories: experimental  
+Validator: `Range [1.0,1200.0]`  
+
 ## phantomsRespectMobcap
 Phantoms don't ignore the mobcap.
 
